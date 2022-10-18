@@ -1,5 +1,4 @@
 
-
 <h1>{{productsList}}</h1>
 
 <select (change)='onOptionsSelected($event)'>
@@ -19,6 +18,16 @@
   <li *ngSwitchCase="'ndesc'"><app-d></app-d></li>
   <li *ngSwitchDefault></li>
 </ul> 
+
+
+<div>
+  <input type="number" min="1" max="5" value="1" name="num" (change)="onChange($event)">
+  
+  <h1>{{total}}</h1>
+
+</div>
+
+
 
 
 
